@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +10,12 @@
         margin: 0;
         padding: 0;
         background-color: rgb(255, 255, 255);
-        color: blueviolet;
+        color: rgb(44, 3, 245);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     header {
-        background-color: rgb(127, 20, 220);
+        background-color: rgb(0, 8, 252);
         color: aliceblue;
         text-align: center;
         padding-top: 20px;
@@ -30,7 +29,7 @@
     }
 
     header p {
-        font-size: 30px;
+        font-size: 20px;
         font-family: sans-serif;
     }
 
@@ -42,11 +41,60 @@
     }
 
     section {
-background-color: rgb(241, 241, 245);
+background-color: rgb(247, 244, 244);
 padding: 20px;
 border-radius: 10px;
 border: 1px solid;
+margin-bottom: 15px;
 
+    }
+
+    section h2 {
+        color: rgb(22, 5, 250);
+    }
+
+    ul {
+        list-style-type: square;
+    }
+    li{
+        margin-top: 30px;
+    }
+
+    li a {
+        font-size: 15px;
+    }
+    a{
+        color:blue
+        text-decoration: none;
+
+    }
+    a:hover {
+        text-decoration: underline
+        cursor: pointer
+    }
+    .buttons{
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .buttons-visualizacao {
+        font-size: 20px;
+        color: rgb(63, 118, 244);
+        margin: 15px;
+        ;
+    }
+    .modo-grade {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    .modo-grade section {
+        width: 40%;
     }
 </style>
 <body>
@@ -55,19 +103,25 @@ border: 1px solid;
             bem vindo a minha pagina
         </h1>
         <p>
-            professor do ensino tecnico
+            aluno do ensino tecnico
         </p>
     </header>
+    <div class="buttons">
+        <button class="buttons-visualizacao" onclick="mudarGrade()">Visualização Grade</button>
+        <button class="buttons-visualizacao" onclick="mudarLista()">Visualização Lista</button>
+    </div>
 
-    <main>
+    <main id="principal">
         <section>
             <h2>
                 minhas habilidades
                 <ul>
-                    <li>lgica de programação</li>
-                    <li>HTML5 & CSS3</li>
-                    <li>trabalho em equipe</li>
-                    <li>IOT</li>
+                    <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank"> video sobre html e css</a>
+                    
+                    <a href="https://www.youtube.com/watch?v=oKbP4qUAqFA&list=PL866_LrQxNVikO2_7hqR7oUSbs_2i7-uP" target="_blank"> curso sobre IOT</a>
+                  <a href="https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" target="_blank"> logica de programação</a>
+
+                    
                 </ul>
             </h2>
         </section>
@@ -75,48 +129,54 @@ border: 1px solid;
             <h2>
                 cursos
                 <ul>
-                    <li>logica de programaçao</li>
-                    <li>levantamente de requisistios</li>
-                    <li>sistemas operacionais</li>
-                    <li> redes IOT</li>
+                    <a href="https://codefinity.com/get-started/spa/v16/spv16/quarter/pt?utm_source=google&utm_medium=cpc&utm_campaign=21012434123&utm_content=161793440587&utm_term=curso%20de%20programa%C3%A7%C3%A3o%20gratuito&dki=Curso%20De%20Programa%C3%A7%C3%A3o%20Gratuito&gad_source=1&gad_campaignid=21012434123&gbraid=0AAAAABTeUgQDHQQHC3d3H1E3R1Hx0FXrd&gclid=Cj0KCQjwndHEBhDVARIsAGh0g3BoWcWg5I-byyNLphJ494IAyt2oNPMEHjCQyGnIyKKnrvBaU5fjAREaArLBEALw_wcB" target="_blank"> curso gratuito logica</a>
+                    <a href="https://www.youtube.com/watch?v=AvF8Gnft78k&list=PL866_LrQxNVhjUCo5b9iQLvgTtC9RoyO1" target="_blank">sistemas operacionais</a>
+                
                 </ul>
             </h2>
         </section>
-    </main>
-</body>
-</html>
- <main>
-        <section>
+                        <section>
             <h2>
-                meus hobbies
+                Hobbies
                 <ul>
-                    <li>soltar pipa</li>
-                    <li>jogar free fire</li>
-                    <li>pintar bobbie goods</li>
-                    <li>assistir dexter</li>
+                    <a href="https://www.youtube.com/watch?v=qy1RKmXVYU0" target="_blank"> serie dexter </a>
+
+                    <a href="https://ge.globo.com/futebol/times/flamengo/" target="_blank"> futebol noticias </a>
+
+                    <a href="https://www.youtube.com/watch?v=V5d9lPG-eyc" target="_blank"> pintando bobbie goods </a>
+
+                   <a href="https://www.betano.bet.br/casino/" target="_blank"> cassino </a>
                 </ul>
             </h2>
-         </ul>
         </section>
-        <section>
+
+                 <section>
             <h2>
                 Contatos
+                <ul>
+                    <li>
+                        <a href="">E-mail: murilo.c.cardoso@aluno.senai.br</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/henriqueVJd4rk" target="_blank">Github: </a>
+                    </li>
+                </ul>
             </h2>
-            <ul>
-                <li>
-                    <a href="">Email: murilo.c.cardoso@aluno.senai.br</a>
-                </li>
-                <li>
-                    <a href="">Github: https://github.com/ferarau</a>
-                </li>
-            </ul>
         </section>
-
-
+        <footer>
+            &copy;The top 1 site of the world
+        </footer>
     </main>
 </body>
+<script>
+    function mudarGrade() {
+      const principal = document.getElementById('principal')
+      principal.classList.toggle('modo-grade')
+    }
+</script> 
+<script>
+    function mudarLista(){
+        alert ("oi sou o botão que muda para lista")
+    }
+</script> 
 </html>
-
-
-              
-
